@@ -1,16 +1,5 @@
 import styled from 'styled-components';
 
-const getStatusColor = props => {
-  switch (props.isOnline) {
-    case 'true':
-      return 'green';
-    case 'false':
-      return 'red';
-    default:
-      return null;
-  }
-};
-
 export const Status = styled.span`
   display: block;
   height: 16px;
