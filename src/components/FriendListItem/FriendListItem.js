@@ -1,9 +1,9 @@
 import { Status, Item, Name } from './FriendListItem.styled';
 
-export const FriendListItem = ({ id, avatar, name, isOnline }) => {
+export const FriendListItem = ({ id, avatar, name, online }) => {
   return (
     <Item key={id}>
-      <Status props={isOnline}></Status>
+      <Status online={online}></Status>
       <img src={avatar} alt="User avatar" width="48" />
       <Name>{name}</Name>
     </Item>

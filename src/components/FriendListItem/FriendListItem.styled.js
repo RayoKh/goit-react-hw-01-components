@@ -16,7 +16,7 @@ export const Status = styled.span`
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background-color: ${getStatusColor};
+  background-color: ${({ online }) => (online ? 'green' : 'red')};
 `;
 
 export const Item = styled.li`
